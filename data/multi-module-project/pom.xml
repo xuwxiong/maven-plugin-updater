@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>intact.devtools</groupId>
+		<artifactId>intact-parent-pom</artifactId>
+		<version>1.0.29</version>
+	</parent>
+
+	<groupId>intact.soa.it.entity.my-service</groupId>
+	<artifactId>my-service-webservice</artifactId>
+	<version>5.5.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>${project.artifactId}</name>
+
+	<modules>
+		<module>my-service-endpoints</module>
+		<module>my-service-ear</module>
+		<module>my-service-repository</module>
+	</modules>
+
+	<scm>
+		<connection>scm:jazz:https://prod-rtc-b2e.iad.ca.inet/ccm:DEV_${user.name}_${shortGroupId}.${project.artifactId}_MASTER_WS</connection>
+	</scm>
+
+	<distributionManagement>
+		<site>
+			<id>intact-site</id>
+			<name>intact site repository</name>
+			<url>dav:${project.url}</url>
+		</site>
+	</distributionManagement>
+	
+	<properties>
+		<shortGroupId>soa.it.entity.my-service</shortGroupId>
+		<version-with-property>VERSION-5.3</version-with-property>
+		<version-with-property-in-parent-pom>VERSION-5.3</version-with-property-in-parent-pom>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>intact.soa.it.entity.my-service</groupId>
+				<artifactId>my-service-repository</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>intact.soa.it.entity.my-service</groupId>
+				<artifactId>my-service-endpoints</artifactId>
+				<version>${project.version}</version>
+				<type>war</type>
+			</dependency>
+			<dependency>
+				<groupId>intact.soa.it.entity.my-service</groupId>
+				<artifactId>my-service-message</artifactId>
+				<version>${project.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>intact.soa-resources</groupId>
+						<artifactId>my-service-resources</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>intact.soa-resources</groupId>
+						<artifactId>ws-commons-message-resources</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>intact.soa-resources</groupId>
+						<artifactId>enterprise-domain-data-resources</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>intact.test</groupId>
+				<artifactId>artifact-in-all-versions</artifactId>
+				<version>VERSION-5.3</version>
+			</dependency>
+			<dependency>
+				<groupId>intact.test</groupId>
+				<artifactId>artifact-in-previous-version</artifactId>
+				<version>VERSION-5.3</version>
+			</dependency>
+			<dependency>
+				<groupId>intact.test</groupId>
+				<artifactId>artifact-in-latest-version</artifactId>
+				<version>VERSION-5.3</version>
+			</dependency>
+			<dependency>
+				<groupId>intact.test</groupId>	
+				<artifactId>artifact-using-property</artifactId>
+				<version>${version-with-property}</version>
+			</dependency>
+			<dependency>
+				<groupId>intact.test</groupId>
+				<artifactId>artifact-used-in-multi-module-version-in-parent</artifactId>
+				<version>VERSION-5.3</version>
+			</dependency>
+
+			<!-- logging -->
+			<dependency>
+				<groupId>intact.commons</groupId>
+				<artifactId>dependencies-logging</artifactId>
+				<version>1.2.15.1</version>
+				<type>pom</type>
+			</dependency>
+
+			<!-- spring -->
+			<dependency>
+				<groupId>intact.commons</groupId>
+				<artifactId>dependencies-spring</artifactId>
+				<version>2.5.5.1</version>
+				<type>pom</type>
+			</dependency>
+
+			<!-- testing -->
+			<dependency>
+				<groupId>intact.commons</groupId>
+				<artifactId>dependencies-spring-test</artifactId>
+				<version>2.5.5.3</version>
+				<type>pom</type>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.11</version>
+				<scope>test</scope>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+	
+	<dependencies>
+		<dependency>
+			<groupId>intact.test</groupId>
+			<artifactId>artifact-in-all-versions</artifactId>
+			<version>VERSION-5.3</version>
+		</dependency>
+		<dependency>
+			<groupId>intact.test</groupId>
+			<artifactId>artifact-in-previous-version</artifactId>
+			<version>VERSION-5.3</version>
+		</dependency>
+		<dependency>
+			<groupId>intact.test</groupId>
+			<artifactId>artifact-in-latest-version</artifactId>
+			<version>VERSION-5.3</version>
+		</dependency>
+		<dependency>
+			<groupId>intact.test</groupId>	
+			<artifactId>artifact-using-property</artifactId>
+			<version>${version-with-property}</version>
+		</dependency>
+		<dependency>
+			<groupId>intact.test</groupId>
+			<artifactId>artifact-used-in-multi-module-version-in-parent</artifactId>
+			<version>VERSION-5.3</version>
+		</dependency>
+	</dependencies>
+</project>

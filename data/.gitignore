@@ -1,0 +1,5 @@
+*.iml
+/generate-doc
+/branchFixTests
+/*.iml
+/junit-test

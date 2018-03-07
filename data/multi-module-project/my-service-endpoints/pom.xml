@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>intact.soa.it.entity.my-service</groupId>
+		<artifactId>my-service-webservice</artifactId>
+		<version>5.5.0.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>my-service-endpoints</artifactId>
+	<name>${project.artifactId}</name>
+	<packaging>war</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>intact.soa.it.entity.my-service</groupId>
+			<artifactId>my-service-message</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>intact.soa.it.entity.my-service</groupId>
+			<artifactId>my-service-repository</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>intact.soa</groupId>
+			<artifactId>ws-common-utils</artifactId>
+			<version>2.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<!-- logging -->
+		<dependency>
+			<groupId>intact.commons</groupId>
+			<artifactId>dependencies-logging</artifactId>
+			<type>pom</type>
+		</dependency>
+
+		<!-- spring -->
+		<dependency>
+			<groupId>intact.commons</groupId>
+			<artifactId>dependencies-spring</artifactId>
+			<type>pom</type>
+		</dependency>
+
+		<!-- webservices -->
+		<dependency>
+			<groupId>intact.soa</groupId>
+			<artifactId>dependencies-webservices</artifactId>
+			<version>2.2.1.1.2</version>
+			<type>pom</type>
+		</dependency>
+
+		<!-- testing -->		
+	    <dependency>
+            <groupId>intact.commons</groupId>
+            <artifactId>unit-tests-util</artifactId>
+            <version>1.0.5</version>
+            <scope>test</scope>
+        </dependency>
+	    <dependency>
+			<groupId>intact.commons</groupId>
+			<artifactId>dependencies-spring-test</artifactId>
+			<type>pom</type>
+			<scope>test</scope>
+	    </dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- web -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.2</version><!--$NO-MVN-MAN-VER$ -->
+				<configuration>
+					<!-- <failOnMissingWebXml>false</failOnMissingWebXml> -->
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+						</manifest>
+						<manifestEntries>
+							<DisableIBMJAXWSEngine>true</DisableIBMJAXWSEngine>
+						</manifestEntries>
+					</archive>
+					<warSourceExcludes>WEB-INF/xsd/**,WEB-INF/wsdl/**</warSourceExcludes>
+				</configuration>
+			</plugin>
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.java</include>
+				</includes>
+				<filtering>false</filtering>
+			</resource>
+		</resources>
+		<testResources>
+			<testResource>
+				<directory>src/test/resources</directory>
+			</testResource>
+			<testResource>
+				<directory>conf/env/server/dev</directory>
+			</testResource>
+		</testResources>
+	</build>
+</project>

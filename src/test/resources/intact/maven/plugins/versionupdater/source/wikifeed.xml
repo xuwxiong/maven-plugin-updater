@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:base="https://teamsites.iad.ca.inet/ifc/SOADevelopment/_vti_bin/listdata.svc/" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">BCO62D14</title>
+  <id>https://teamsites.iad.ca.inet/ifc/SOADevelopment/_vti_bin/listdata.svc/BCO62D14</id>
+  <updated>2016-03-02T04:02:42Z</updated>
+  <link rel="self" title="BCO62D14" href="BCO62D14" />
+  <entry m:etag="W/&quot;18&quot;">
+    <id>https://teamsites.iad.ca.inet/ifc/SOADevelopment/_vti_bin/listdata.svc/BCO62D14(1)</id>
+    <title type="text">address-service-consumer</title>
+    <updated>2016-02-17T14:14:15-05:00</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="BCO62D14Item" href="BCO62D14(1)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/BOMTarget" type="application/atom+xml;type=feed" title="BOMTarget" href="BCO62D14(1)/BOMTarget">
+      <m:inline>
+        <feed>
+          <title type="text">BOMTarget</title>
+          <id>https://teamsites.iad.ca.inet/ifc/SOADevelopment/_vti_bin/listdata.svc/BCO62D14(1)/BOMTarget</id>
+          <updated>2016-03-02T04:02:42Z</updated>
+          <link rel="self" title="BOMTarget" href="BCO62D14(1)/BOMTarget" />
+          <entry>
+            <id>https://teamsites.iad.ca.inet/ifc/SOADevelopment/_vti_bin/listdata.svc/BCO62D14BOMTarget('bom-consumers')</id>
+            <title type="text">bom-consumers</title>
+            <updated>2016-03-02T04:02:42Z</updated>
+            <author>
+              <name />
+            </author>
+            <link rel="edit" title="BCO62D14BOMTargetValue" href="BCO62D14BOMTarget('bom-consumers')" />
+            <category term="Microsoft.SharePoint.DataService.BCO62D14BOMTargetValue" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+            <content type="application/xml">
+              <m:properties>
+                <d:Value>bom-consumers</d:Value>
+              </m:properties>
+            </content>
+          </entry>
+        </feed>
+      </m:inline>
+    </link>
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Exclusions" type="application/atom+xml;type=feed" title="Exclusions" href="BCO62D14(1)/Exclusions">
+      <m:inline>
+        <feed>
+          <title type="text">Exclusions</title>
+          <id>https://teamsites.iad.ca.inet/ifc/SOADevelopment/_vti_bin/listdata.svc/BCO62D14(1)/Exclusions</id>
+          <updated>2016-03-02T04:02:42Z</updated>
+          <author>
+            <name />
+          </author>
+          <link rel="self" title="Exclusions" href="BCO62D14(1)/Exclusions" />
+        </feed>
+      </m:inline>
+    </link>
+    <category term="Microsoft.SharePoint.DataService.BCO62D14Item" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ArtifactId>address-service-consumer</d:ArtifactId>
+        <d:VersionId>1.0.0</d:VersionId>
+        <d:GroupId>intact.soa.utility.address-service</d:GroupId>
+        <d:VersionRelease>1.0.0</d:VersionRelease>
+        <d:DependencyTypeValue m:null="true" />
+        <d:DependencyScopeValue m:null="true" />
+        <d:ID m:type="Edm.Int32">1</d:ID>
+      </m:properties>
+    </content>
+  </entry>  
+<entry m:etag="W/&quot;9&quot;">
+    <id>https://teamsites.iad.ca.inet/ifc/SOADevelopment/_vti_bin/listdata.svc/BCO62D14(192)</id>
+    <title type="text">unit-tests-util</title>
+    <updated>2016-02-24T14:18:34-05:00</updated>
+    <author>
+      <name />
+    </author>
+    <link rel="edit" title="BCO62D14Item" href="BCO62D14(192)" />
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/BOMTarget" type="application/atom+xml;type=feed" title="BOMTarget" href="BCO62D14(192)/BOMTarget">
+      <m:inline>
+        <feed>
+          <title type="text">BOMTarget</title>
+          <id>https://teamsites.iad.ca.inet/ifc/SOADevelopment/_vti_bin/listdata.svc/BCO62D14(192)/BOMTarget</id>
+          <updated>2016-03-02T04:02:43Z</updated>
+          <link rel="self" title="BOMTarget" href="BCO62D14(192)/BOMTarget" />
+          <entry>
+            <id>https://teamsites.iad.ca.inet/ifc/SOADevelopment/_vti_bin/listdata.svc/BCO62D14BOMTarget('bom-soa')</id>
+            <title type="text">bom-soa</title>
+            <updated>2016-03-02T04:02:42Z</updated>
+            <author>
+              <name />
+            </author>
+            <link rel="edit" title="BCO62D14BOMTargetValue" href="BCO62D14BOMTarget('bom-soa')" />
+            <category term="Microsoft.SharePoint.DataService.BCO62D14BOMTargetValue" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+            <content type="application/xml">
+              <m:properties>
+                <d:Value>bom-soa</d:Value>
+              </m:properties>
+            </content>
+          </entry>
+        </feed>
+      </m:inline>
+    </link>
+    <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Exclusions" type="application/atom+xml;type=feed" title="Exclusions" href="BCO62D14(192)/Exclusions">
+      <m:inline>
+        <feed>
+          <title type="text">Exclusions</title>
+          <id>https://teamsites.iad.ca.inet/ifc/SOADevelopment/_vti_bin/listdata.svc/BCO62D14(192)/Exclusions</id>
+          <updated>2016-03-02T04:02:43Z</updated>
+          <link rel="self" title="Exclusions" href="BCO62D14(192)/Exclusions" />
+          <entry m:etag="W/&quot;1&quot;">
+            <id>https://teamsites.iad.ca.inet/ifc/SOADevelopment/_vti_bin/listdata.svc/BCO62D14(352)</id>
+            <title type="text">cglib-full</title>
+            <updated>2016-02-24T14:16:27-05:00</updated>
+            <author>
+              <name />
+            </author>
+            <link rel="edit" title="BCO62D14Item" href="BCO62D14(352)" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="BCO62D14(352)/Category" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Status" type="application/atom+xml;type=entry" title="Status" href="BCO62D14(352)/Status" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/ExtDep" type="application/atom+xml;type=feed" title="ExtDep" href="BCO62D14(352)/ExtDep" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/BOMTarget" type="application/atom+xml;type=feed" title="BOMTarget" href="BCO62D14(352)/BOMTarget" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DependencyType" type="application/atom+xml;type=entry" title="DependencyType" href="BCO62D14(352)/DependencyType" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DependencyScope" type="application/atom+xml;type=entry" title="DependencyScope" href="BCO62D14(352)/DependencyScope" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Exclusions" type="application/atom+xml;type=feed" title="Exclusions" href="BCO62D14(352)/Exclusions" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/CrééPar" type="application/atom+xml;type=entry" title="CrééPar" href="BCO62D14(352)/CrééPar" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/ModifiéPar" type="application/atom+xml;type=entry" title="ModifiéPar" href="BCO62D14(352)/ModifiéPar" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PiècesJointes" type="application/atom+xml;type=feed" title="PiècesJointes" href="BCO62D14(352)/PiècesJointes" />
+            <category term="Microsoft.SharePoint.DataService.BCO62D14Item" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+            <content type="application/xml">
+              <m:properties>
+                <d:ArtifactId>cglib-full</d:ArtifactId>
+                <d:VersionId m:null="true" />
+                <d:GroupId>cglib</d:GroupId>
+                <d:CategoryValue>exclusion</d:CategoryValue>
+                <d:Responsable m:null="true" />
+                <d:StatusValue m:null="true" />
+                <d:EarDeployed m:null="true" />
+                <d:Comment>&lt;div&gt;&lt;/div&gt;</d:Comment>
+                <d:IfProperty2020 m:type="Edm.Boolean">true</d:IfProperty2020>
+                <d:VersionRelease m:null="true" />
+                <d:DependencyTypeValue m:null="true" />
+                <d:DependencyScopeValue m:null="true" />
+                <d:ToRelease m:type="Edm.Boolean">false</d:ToRelease>
+                <d:IDDuTypeDeContenu>0x01000E24BEDEEC86B74EAC521132E62CE8C3</d:IDDuTypeDeContenu>
+                <d:ArtifactGroup>cglib-full/cglib</d:ArtifactGroup>
+                <d:ID m:type="Edm.Int32">352</d:ID>
+                <d:TypeDeContenu>Élément</d:TypeDeContenu>
+                <d:Modifié m:type="Edm.DateTime">2016-02-24T14:16:27</d:Modifié>
+                <d:Créé m:type="Edm.DateTime">2016-02-24T14:16:27</d:Créé>
+                <d:CrééParId m:type="Edm.Int32">79</d:CrééParId>
+                <d:ModifiéParId m:type="Edm.Int32">79</d:ModifiéParId>
+                <d:Owshiddenversion m:type="Edm.Int32">1</d:Owshiddenversion>
+                <d:Version>1.0</d:Version>
+                <d:CheminDAccès>/ifc/SOADevelopment/Lists/BCO 61 D14</d:CheminDAccès>
+              </m:properties>
+            </content>
+          </entry>
+          <entry m:etag="W/&quot;1&quot;">
+            <id>https://teamsites.iad.ca.inet/ifc/SOADevelopment/_vti_bin/listdata.svc/BCO62D14(352)</id>
+            <title type="text">cglib-full</title>
+            <updated>2016-02-24T14:16:27-05:00</updated>
+            <author>
+              <name />
+            </author>
+            <link rel="edit" title="BCO62D14Item" href="BCO62D14(352)" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Category" type="application/atom+xml;type=entry" title="Category" href="BCO62D14(352)/Category" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Status" type="application/atom+xml;type=entry" title="Status" href="BCO62D14(352)/Status" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/ExtDep" type="application/atom+xml;type=feed" title="ExtDep" href="BCO62D14(352)/ExtDep" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/BOMTarget" type="application/atom+xml;type=feed" title="BOMTarget" href="BCO62D14(352)/BOMTarget" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DependencyType" type="application/atom+xml;type=entry" title="DependencyType" href="BCO62D14(352)/DependencyType" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DependencyScope" type="application/atom+xml;type=entry" title="DependencyScope" href="BCO62D14(352)/DependencyScope" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Exclusions" type="application/atom+xml;type=feed" title="Exclusions" href="BCO62D14(352)/Exclusions" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/CrééPar" type="application/atom+xml;type=entry" title="CrééPar" href="BCO62D14(352)/CrééPar" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/ModifiéPar" type="application/atom+xml;type=entry" title="ModifiéPar" href="BCO62D14(352)/ModifiéPar" />
+            <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PiècesJointes" type="application/atom+xml;type=feed" title="PiècesJointes" href="BCO62D14(352)/PiècesJointes" />
+            <category term="Microsoft.SharePoint.DataService.BCO62D14Item" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+            <content type="application/xml">
+              <m:properties>
+                <d:ArtifactId>cglib-full</d:ArtifactId>
+                <d:VersionId m:null="true" />
+                <d:GroupId>cglib</d:GroupId>
+                <d:CategoryValue>exclusion</d:CategoryValue>
+                <d:Responsable m:null="true" />
+                <d:StatusValue m:null="true" />
+                <d:EarDeployed m:null="true" />
+                <d:Comment>&lt;div&gt;&lt;/div&gt;</d:Comment>
+                <d:IfProperty2020 m:type="Edm.Boolean">true</d:IfProperty2020>
+                <d:VersionRelease m:null="true" />
+                <d:DependencyTypeValue m:null="true" />
+                <d:DependencyScopeValue m:null="true" />
+                <d:ToRelease m:type="Edm.Boolean">false</d:ToRelease>
+                <d:IDDuTypeDeContenu>0x01000E24BEDEEC86B74EAC521132E62CE8C3</d:IDDuTypeDeContenu>
+                <d:ArtifactGroup>cglib-full/cglib</d:ArtifactGroup>
+                <d:ID m:type="Edm.Int32">352</d:ID>
+                <d:TypeDeContenu>Élément</d:TypeDeContenu>
+                <d:Modifié m:type="Edm.DateTime">2016-02-24T14:16:27</d:Modifié>
+                <d:Créé m:type="Edm.DateTime">2016-02-24T14:16:27</d:Créé>
+                <d:CrééParId m:type="Edm.Int32">79</d:CrééParId>
+                <d:ModifiéParId m:type="Edm.Int32">79</d:ModifiéParId>
+                <d:Owshiddenversion m:type="Edm.Int32">1</d:Owshiddenversion>
+                <d:Version>1.0</d:Version>
+                <d:CheminDAccès>/ifc/SOADevelopment/Lists/BCO 61 D14</d:CheminDAccès>
+              </m:properties>
+            </content>
+          </entry>
+        </feed>
+      </m:inline>
+    </link>
+    <category term="Microsoft.SharePoint.DataService.BCO62D14Item" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+    <content type="application/xml">
+      <m:properties>
+        <d:ArtifactId>unit-tests-util</d:ArtifactId>
+        <d:VersionId>1.0.8</d:VersionId>
+        <d:GroupId>intact.commons</d:GroupId>
+        <d:VersionRelease>1.0.8</d:VersionRelease>
+        <d:DependencyTypeValue>test-jar</d:DependencyTypeValue>
+        <d:DependencyScopeValue>test</d:DependencyScopeValue>
+        <d:ID m:type="Edm.Int32">192</d:ID>
+      </m:properties>
+    </content>
+  </entry>
+</feed>

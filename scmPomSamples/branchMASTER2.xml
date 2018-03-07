@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>intact.devtools</groupId>
+        <artifactId>intact-parent-pom</artifactId>
+        <version>1.3.17</version>
+    </parent>
+    <groupId>intact.tests.scm-tests</groupId>
+    <artifactId>scm-tests</artifactId>
+    <version>1.0.1-branch-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>SCM Tests</name>
+    <description>Test project to validate the SCM tag</description>
+
+    <scm>
+        <connection>scm:jazz:https://prod-rtc-b2e.iad.ca.inet/ccm:${scmRepositoryWorkspace}</connection>
+    </scm>
+
+    <properties>
+        <shortGroupId>scm-tests</shortGroupId>
+        <scmRepositoryWorkspace>DEV_${user.name}_${shortGroupId}.${project.artifactId}_branch_WS</scmRepositoryWorkspace>
+    </properties>
+
+</project>

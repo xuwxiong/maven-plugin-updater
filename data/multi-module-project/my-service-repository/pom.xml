@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>intact.soa.it.entity.my-service</groupId>
+		<artifactId>my-service-webservice</artifactId>
+		<version>5.5.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>my-service-repository</artifactId>
+	<name>${project.artifactId}</name>
+
+	<properties>
+		<version-with-property>VERSION-5.3</version-with-property>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>intact.test</groupId>
+			<artifactId>artifact-in-all-versions</artifactId>
+			<version>VERSION-5.3</version>
+		</dependency>
+		<dependency>
+			<groupId>intact.test</groupId>
+			<artifactId>artifact-in-previous-version</artifactId>
+			<version>VERSION-5.3</version>
+		</dependency>
+		<dependency>
+			<groupId>intact.test</groupId>
+			<artifactId>artifact-in-latest-version</artifactId>
+			<version>VERSION-5.3</version>
+		</dependency>
+		<dependency>
+			<groupId>intact.test</groupId>	
+			<artifactId>artifact-using-property</artifactId>
+			<version>${version-with-property}</version>
+		</dependency>
+		<dependency>
+			<groupId>intact.test</groupId>
+			<artifactId>artifact-used-in-multi-module-version-in-parent</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>intact.test</groupId>
+			<artifactId>artifact-used-in-multi-module-using-property</artifactId>
+			<version>${version-with-property-in-parent-pom}</version>
+		</dependency>
+		<dependency>
+			<groupId>intact.soa.it.entity.my-service</groupId>
+			<artifactId>my-service-message</artifactId>
+		</dependency>
+
+		<!-- spring -->
+		<dependency>
+			<groupId>intact.commons</groupId>
+			<artifactId>dependencies-spring</artifactId>
+			<type>pom</type>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>

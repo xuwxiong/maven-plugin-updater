@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-configurations>
+	<project-configuration>
+		<name>5.4</name>
+		<default-project-version>5.4.0.0-SNAPSHOT</default-project-version>
+		<dependencies>
+			<dependency>
+				<groupId>a.b.c</groupId>
+				<artifactId>titi</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>x.y.z</groupId>
+				<artifactId>toto</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+		</dependencies>
+	</project-configuration>
+	<project-configuration>
+		<name>5.5</name>
+		<default-project-version>5.5.0.0-SNAPSHOT</default-project-version>
+		<parent>5.4</parent>
+		<dependencies>
+			<dependency>
+				<groupId>a.b.c</groupId>
+				<artifactId>titi</artifactId>
+				<version>9.9.9</version>
+			</dependency>
+			<dependency>
+				<groupId>i.j.k</groupId>
+				<artifactId>tutu</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+		</dependencies>
+	</project-configuration>
+</project-configurations>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+  		<groupId>intact.soa.it.entity.my-service</groupId>
+        <artifactId>my-service-webservice</artifactId>
+        <version>5.5.0.0-SNAPSHOT</version>
+    </parent>
+
+  <artifactId>my-service-ear</artifactId>
+  <packaging>ear</packaging>
+
+  <name>${project.artifactId}</name>
+
+  <build>
+		<defaultGoal>package</defaultGoal>
+		<plugins>
+			<plugin>
+				<artifactId>maven-ear-plugin</artifactId>
+				<version>2.6</version><!--$NO-MVN-MAN-VER$ -->
+				<configuration>
+					<version>6</version>
+					<modules>
+						<webModule>
+							<groupId>intact.soa.it.entity.my-service</groupId>
+							<artifactId>my-service-endpoints</artifactId>
+							<contextRoot>ConfigurationItemService</contextRoot>
+							<bundleFileName>my-service-endpoints.war</bundleFileName>
+						</webModule>
+					</modules>
+					<defaultJavaBundleDir>lib/</defaultJavaBundleDir>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>intact.soa.it.entity.my-service</groupId>
+			<artifactId>my-service-endpoints</artifactId>
+			<type>war</type>
+		</dependency>
+	</dependencies>
+
+</project>
